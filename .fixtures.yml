@@ -25,5 +25,9 @@ fixtures:
     systemd:
       repo: https://github.com/simp/puppet-systemd
       branch: simp-master
+    disa_stig-el7-baseline:
+      repo: https://github.com/simp/inspec-profile-disa_stig-el7
+      branch:  master
+      target: spec/fixtures/inspec_deps/inspec_profiles/profiles
   symlinks:
     sssd: "#{source_dir}"
